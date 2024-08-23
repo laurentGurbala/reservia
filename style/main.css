@@ -192,6 +192,7 @@ nav {
     align-items: center;
     flex-wrap: wrap;
     gap: 1rem 2rem;
+    margin-bottom: 2rem;
 }
 
 .filter {
@@ -223,4 +224,23 @@ nav {
 
 .filter span {
     padding: 0 1rem;
+}
+
+/* Search result */
+.search-result {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.search-result .fa-solid {
+    color: var(--color-primary);
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.2rem;
+    border: 1px solid var(--color-bg-filter);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
 }
