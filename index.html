@@ -5,10 +5,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Reservia</title>
+    <script src="https://kit.fontawesome.com/9640580a8c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style/main.css">
 </head>
 
 <body>
+    <!-- header -->
     <header>
         <nav>
             <img class="logo" src="./assets/reservia_logo.png" alt="logo reservia"></img>
@@ -19,6 +21,22 @@
             <a class="signup" href="#">S'inscrire</a>
         </nav>
     </header>
+
+    <!-- Contenu principal -->
+    <main class="wrapper">
+        <!-- Slogan -->
+        <div class="slogan">
+            <h1 class="slogan__title">Trouvez votre hébergement pour des vacances de rêve</h1>
+            <p>En plein centre de ville ou en pleine nature</p>
+        </div>
+
+        <!-- Recherche -->
+        <div class="search">
+            <span class="search__wrap-icon"><i class="fa-solid fa-location-dot"></i></span>
+            <input class="search__input" type="text" placeholder="Marseille, France">
+            <button class="search__btn">Rechercher</button>
+        </div>
+    </main>
 </body>
 
 </html>
