@@ -21,6 +21,12 @@ a {
     text-decoration: none;
 }
 
+@media (max-width: 800px) {
+    body {
+        margin: 0.8rem;
+    }
+}
+
 /* Header */
 nav {
     display: flex;
@@ -100,6 +106,16 @@ nav {
     padding-bottom: 0.5rem;
 }
 
+@media (min-width: 800px) {
+    .slogan__title {
+        font-size: 1.5rem;
+    }
+
+    .slogan__title+p {
+        font-size: 0.9rem;
+    }
+}
+
 /* Search */
 .search {
     display: flex;
@@ -107,15 +123,18 @@ nav {
     margin-bottom: 2rem;
 }
 
+.search > * {
+    padding: 1rem 1.5rem;
+}
 .search__wrap-icon {
-    padding: 1rem 1.25rem;
     background-color: var(--color-secondary);
     border-radius: 1rem 0 0 1rem;
 }
 
 .search__input {
-    padding: 1rem;
-    flex-basis: 16rem;
+    flex-basis: 22rem;
+    flex-shrink: 2;
+    min-width: 10rem;
     font-family: "Rarelay", sans-serif;
     border: 2px solid #f2f2f2;
 }
@@ -132,7 +151,6 @@ nav {
     font-weight: bold;
     border: none;
     border-radius: 0 1rem 1rem 0;
-    padding: 1rem 1.5rem;
     cursor: pointer;
     position: relative;
     z-index: 1;
@@ -141,10 +159,7 @@ nav {
 .search__btn::after {
     content: "";
     position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
+    inset: 0;
     border-radius: 0 1rem 1rem 0;
     background-color: #0051C9;
     z-index: -1;
@@ -154,4 +169,18 @@ nav {
 
 .search__btn:hover::after {
     opacity: 1;
+}
+
+.search__btn .fa-magnifying-glass {
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .search__btn--text {
+        display: none;
+    }
+
+    .search__btn .fa-magnifying-glass {
+        display: inline-block;
+    }
 }
