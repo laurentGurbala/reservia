@@ -1,6 +1,6 @@
 .popular-card {
     display: flex;
-    min-width: 17rem;
+    min-width: 12rem;
     background-color: #fff;
     padding: 0.5rem;
     border-radius: 1rem;
@@ -36,4 +36,22 @@
 .popular-card__stars {
     color: #d9d9d9;
     margin-top: auto;
+}
+
+@media (max-width: 420px) {
+    .popular-card {
+        min-width: 11rem;
+    }
+    
+    .popular-card__title {
+        font-size: 0.9rem;
+    }
+
+    .popular-card__subtitle {
+        font-size: 0.8rem;
+    }
+
+    .popular-card__stars {
+        font-size: 0.8rem;
+    }
 }
