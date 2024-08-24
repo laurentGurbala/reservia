@@ -66,3 +66,9 @@
         display: inline-block;
     }
 }
+
+@media (max-width: 420px) {
+    .search__input {
+        min-width: 7.5rem;
+    }
+}
