@@ -12,6 +12,7 @@
 @import "./city_card.css";
 @import "./popular_card.css";
 @import "./activity.css";
+@import "./footer.css";
 
 :root {
     --color-primary: #0065fc;
