@@ -1,0 +1,17 @@
+.slogan {
+    margin-bottom: 1rem;
+}
+
+.slogan__title {
+    padding-bottom: 0.5rem;
+}
+
+@media (min-width: 800px) {
+    .slogan__title {
+        font-size: 1.5rem;
+    }
+
+    .slogan__title+p {
+        font-size: 0.9rem;
+    }
+}

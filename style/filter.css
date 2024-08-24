@@ -1,0 +1,38 @@
+.filter-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem 2rem;
+    margin-bottom: 2rem;
+}
+
+.filter {
+    display: flex;
+    align-items: center;
+    border: 2px solid #d9d9d9;
+    border-radius: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.filter:hover {
+    border-color: #f3f8ff;
+    background-color: #f3f8ff;
+    transform: scale(1.02);
+}
+
+.filter .fa-solid {
+    width: 2rem;
+    height: 2rem;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    color: var(--color-primary);
+    background-color: var(--color-bg-filter);
+    margin: -2px;
+}
+
+.filter span {
+    padding: 0 1rem;
+}

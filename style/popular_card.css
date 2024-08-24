@@ -1,0 +1,39 @@
+.popular-card {
+    display: flex;
+    min-width: 17rem;
+    background-color: #fff;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 16px #0000002e;
+    transition: transform 0.15s;
+}
+
+.popular-card:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+}
+
+.popular-card img {
+    height: 8rem;
+    width: 40%;
+    margin-right: 0.5rem;
+    border-radius: 1rem 0 0 1rem;
+    object-fit: cover;
+    object-position: center;
+}
+
+.popular-card__description {
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.popular-card__title {
+    font-weight: bold;
+}
+
+.popular-card__stars {
+    color: #d9d9d9;
+    margin-top: auto;
+}

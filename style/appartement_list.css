@@ -1,0 +1,37 @@
+.apartments-list {
+    display: flex;
+    gap: 1rem;
+}
+
+.apartments-list h2 {
+    margin-bottom: 2rem;
+}
+
+.apartments-list>div {
+    background-color: var(--color-secondary);
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+
+.city {
+    flex-basis: 66%;
+}
+
+.city a {
+    font-weight: bold;
+}
+
+.popular {
+    flex-basis: 33%;
+}
+
+.popular h2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 1300px) {
+    .apartments-list {
+        flex-direction: column-reverse;
+    }
+}
