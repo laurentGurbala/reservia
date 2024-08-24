@@ -11,6 +11,7 @@
 @import "./appartement_list.css";
 @import "./city_card.css";
 @import "./popular_card.css";
+@import "./activity.css";
 
 :root {
     --color-primary: #0065fc;
